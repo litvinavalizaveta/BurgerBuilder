@@ -1,2 +1,4 @@
-﻿// See https://aka.ms/new-console-template for more information
-Console.WriteLine("Hello, World!");
+﻿using Kitchen;
+
+var builder = new BurgerBuilder();
+Console.WriteLine(builder.GetBun().GetCheese().GetVeggies().GetSauce().GetBurger().ToString());
